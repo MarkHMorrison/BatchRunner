@@ -47,7 +47,10 @@ Now refresh the BatchRunnerValidBatch Batch Runner page and you should see the u
 
 Ready to add your own batches?  Excellent!
 
-If your batches are set up with a batchQuery variable like the BatchRunnerValidBatch is then you can pass in an augmented dynamic SOQL string into the Batch Query field. This will allow you to change up the records the batch runs against without updating the code. Pretty clever. You can also see an example of this in the test class.
+### Working with Batch Query
+If your batches are set up with a batchQuery variable like the BatchRunnerValidBatch then you can set a dynamic SOQL string in the Batch Query field. This allows you to change up the records the batch runs against without updating the code. Pretty clever. 
+
+You can also use bind expressions like :variable in the SOQL if they are declared in the start method of the batch class file. You can see an example of this in the test classes.
 
 
 

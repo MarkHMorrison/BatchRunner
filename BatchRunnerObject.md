@@ -59,7 +59,7 @@ Now add the custom fields:
   - Type: Text Area (Long)
   - Field Label: "Batch Query"
   - Field Name: "Batch_Query" (This will result in an API Name of Batch_Query__c)
-  - Description: "Dynamic Query for batch if it needs it or needs to run with different parameters."
+  - Description: "Dynamic Query for batch if it needs it or needs to run with different parameters. You can use :variables if they are declared in the start method of the batch file."
   - Help Text: "No need to escape \'."
   - \# Visible Lines: 10
   - Length: 32,768 (You could make this smaller if you like...)

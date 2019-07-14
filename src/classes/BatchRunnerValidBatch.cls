@@ -11,11 +11,12 @@ global class BatchRunnerValidBatch implements Database.Batchable<sObject>, Datab
   global String batchQuery;
 
   global BatchRunnerValidBatch() {
-    batchQuery = 'SELECT Id, Name, Description__c FROM Batch_Runner__c WHERE Category__c = \'Misc\'';
+    batchQuery = 'SELECT Id, Name, Description__c FROM Batch_Runner__c WHERE Category__c = :category';
     System.debug('constructor batchQuery: ' + batchQuery);
   }
 
   global Database.QueryLocator start(Database.BatchableContext bc) {
+    String category = 'Misc';
     System.debug('start batchQuery: ' + batchQuery);
     return Database.getQueryLocator(batchQuery);
   }

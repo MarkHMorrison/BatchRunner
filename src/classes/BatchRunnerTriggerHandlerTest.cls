@@ -43,7 +43,7 @@ private class BatchRunnerTriggerHandlerTest {
     preBatchRunner.Execute__c     = true;
     preBatchRunner.Description__c = 'Test BatchRunner with Query';
     preBatchRunner.Scope__c       = 1;
-    preBatchRunner.Batch_Query__c = 'SELECT Id, Name, Scope__c, Description__c, Last_Executed_Date__c FROM Batch_Runner__c WHERE Scope__c = 1 AND Category__c = \'Misc\'';
+    preBatchRunner.Batch_Query__c = 'SELECT Id, Name, Scope__c, Description__c, Last_Executed_Date__c FROM Batch_Runner__c WHERE Scope__c = 1 AND Category__c = :category';
 
     Test.startTest();
       update preBatchRunner;
