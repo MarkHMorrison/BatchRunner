@@ -25,6 +25,8 @@ Create them in this order from the src folder:
 - Apex Trigger:
   - BatchRunnerTrigger
 
+> ### Be sure to change the email address for the BatchRunnerTriggerHandler. Look for setToAddresses around line 75.
+
 Run your apex tests to be sure everything is set up and configured right.
 
 ### Add New Batch Runners
