@@ -16,6 +16,8 @@ global class BatchRunnerValidBatch implements Database.Batchable<sObject>, Datab
   }
 
   global Database.QueryLocator start(Database.BatchableContext bc) {
+    // examples of setting a variable to be used in a bind expression in the dynamic SOQL
+    // Date dateStart = System.today() - 390;
     String category = 'Misc';
     System.debug('start batchQuery: ' + batchQuery);
     return Database.getQueryLocator(batchQuery);
