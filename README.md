@@ -10,7 +10,7 @@ With great power comes great responsibility, but that's a different movie.
 ### Create New Object
 
 First we need to set up a new object, Batch Runner, and all it's configuration pieces.
-- Check out the [BatchRunnerObject](../blob/master/BatchRunnerObject.md) file with details on that.
+- Check out the [BatchRunnerObject](../master/BatchRunnerObject.md) file with details on that.
 
 Once we have the Batch Runner object we should add the trigger and it’s handler class. We will also create the test classes that we need for good code coverage.
 
